@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Título de la página</title>
+    <!-- Otros elementos del bloque head -->
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><%= link_to 'Inicio', root_path %></li>
+        <li><%= link_to 'Información de la galería', gallery_about_path %></li>
+        <!-- Otros elementos de la barra de navegación -->
+      </ul>
+    </nav>
+
+    <%= yield %>
+
+    <!-- Otros elementos del pie de página -->
+    
+    <noscript>
+      <img src="/path/to/image.jpg" alt="JavaScript Disabled" />
+    </noscript>
+    <%= javascript_include_tag 'application' %>
+  </body>
+</html>
